@@ -1,6 +1,8 @@
 <template>
     <div class="header" :style="{background:bgColor}">
-        <span class="home" :style="{background:bgColor}">首页</span>
+        <!-- <router-link to="/"> -->
+            <span @click='$emit("home")' class="home" :style="{background:bgColor}">首页</span>
+        <!-- </router-link> -->
         <h2 class="tittle">
             <!-- 插槽 -->
             <slot name="tittle">Movie</slot>
